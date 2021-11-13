@@ -1,0 +1,347 @@
+body{
+	background-color: rgb(24, 25, 31);
+	background-position: center;
+	background-size: cover;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+	position:sticky;
+	top: 0;
+    width: 101.1%;
+  }
+  
+  .topnav a {
+	float: left;
+	color: #f2f2f2;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: bold;
+  }
+  
+  .topnav a:hover {
+	background-color: #bbb;
+	color: black;
+  }
+
+  .topnav-right {
+	float: right;
+  }
+
+  .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  .img_div{
+	padding: 10px;
+	float: none;
+	padding-left:500px;
+  }
+  .menu_div{
+	width: 50%;
+	padding : 10px;
+	float: left;
+	color: honeydew;
+	font-size: 35px;
+	font-family:'Shalimar', cursive;
+	font-weight:bold;
+	margin-left : 475px;
+  }
+
+  #menu_list{
+	color:black; 
+	background-color: #f5c71a;
+	width: 200px;
+	height : 66px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-weight : bold;
+	font-size : 35px;
+	margin : 10px;
+	margin-left:0px;
+  }
+
+  .newRow::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+  .block2{
+	width: 50%;
+	padding : 10px;
+	float: left;
+	color: honeydew;
+	font-size: 35px;
+	font-family:'Shalimar', cursive;
+	font-weight:bold;
+	margin-left : 565px;
+	
+  }
+
+  #see_cart{
+	color:black; 
+	width: 200px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-weight : bold;
+	font-size : 35px;
+	margin : 10px;
+	margin-left:0px;
+	background-color: #f5c71a;
+}
+
+  #add_item {
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	width: 69%;
+	height: 50px;
+	color: #ffffff;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(223, 205, 205);
+    outline: none;
+ }
+
+[placeholder]:focus::-webkit-input-placeholder {
+    transition: text-indent 1s 1s ease; 
+    text-indent: -100%;
+	opacity: 1;
+	color: white;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+ }
+
+
+#im1{
+	width:100px;
+	height: 80px;
+}
+
+#main{
+	border-radius: 10px;
+	border-style: ridge;
+	width:400px;
+	text-align: center;
+}
+#display_menu{
+	display: none;
+}
+
+.menu_img{
+	border-radius: 10px;
+	border-style: ridge;
+	width : 150px;
+	float : left;
+	margin : 10px;
+}
+.newRow{
+	color:honeydew;
+	font-size: 35px;
+	font-family:'Shalimar', cursive;
+	font-weight:bold;
+	float : right;
+	padding-right: 250px;
+	
+}
+#add_top{
+	color:black; 
+	width: 200px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-weight : bold;
+	font-size : 35px;
+	margin : 10px;
+	margin-left:0px;
+}
+
+#choose_pizza{
+	color:black; 
+	width: 200px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-weight : bold;
+	font-size : 35px;
+	margin : 10px;
+	margin-left:0px;
+}
+#display_top{
+	display:none;
+}
+
+/*add toppings button style*/
+#Grilled_Mushroom{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Onion{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Crisp_Capsicum{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Fresh_Tomato{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Paneer{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Red_Pepper{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Jalepeno{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Golden_Corn{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Black_Olive{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Pepper_Barbeque_Chicken{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Peri-Peri_Chicken{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Grilled_Chicken_Rasher{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Chicken_Tikka{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Chicken_Pepperoni{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+#Chicken_Keema{
+	color:black; 
+	width: 50px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-size : 25px;
+	font-family: 'Road Rage', cursive;
+	margin : 10px;
+	margin-left:0px;
+}
+
+#show_top{
+	color:black; 
+	background-color: #f5c71a;
+	width: 200px;
+	border-style: ridge;
+	border-radius: 10px;
+	font-weight : bold;
+	font-size : 35px;
+	margin : 10px;
+	margin-left:0px;
+}
+
+#display_addedmenu{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-style: italic;
+	font-weight: lighter;
+}

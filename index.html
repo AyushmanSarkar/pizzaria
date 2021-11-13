@@ -1,0 +1,174 @@
+<html><head>
+    <title>Pizzeria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">  
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzeria</a>
+        <div class="topnav-right">
+         <a href="#viewblock">View Menu</a>
+         <a href="#addTopings">Customize</a>
+        </div>
+    </div>
+
+    <div class="row" id="block">
+        <div class="img_div"> 
+            <img class="img-responsive" src="pizza.jfif" id="main">
+        </div>
+        
+        <div class="menu_div">
+            <button class="btn btn-success" id="choose_pizza" onclick="choose_pizza()">Choose Pizza</button>
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+           <div id="display_menu">
+               <div class="row">
+                   <img class="menu_img" src="Chicken_Golden_Delight.jpg">
+                   <p>Chicken Golden Delight</p>
+                </div>
+                <div class="row">
+                    <img class="menu_img" src="Non-Veg_Supreme.jpg">
+                    <p>Non-Veg Supreme</p>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="Dominator.jpg">
+                    <p>Chicken Dominator</p>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="IndianChickenTikka.jpg">
+                    <p>Indi-Chicken Tikka</p>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="Mexican_Green_Wave.jpg">
+                    <p>Mexican Green Wave</p>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="Deluxe_Veggie.jpg">
+                    <p>Deluxe Veggie</p>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="Veg_Extravaganz.jpg">
+                    <p>Veg Extravaganza</p>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="IndianTandooriPaneer.jpg">
+                    <p>Indi-Tandoori Paneer</p>
+                 </div>
+               </div>
+        </div>
+    </div>
+    
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="add_item" placeholder="Type the pizza required"> 
+			<button class="btn btn-success" id="add_top" onclick="add_top()">Add Toppings</button>
+         <button class="btn btn-success" id="show_top" onclick="show_top()">Show Toppings</button>
+            <div id="display_top">
+               <div class="row">
+                   <img class="menu_img" src="toppingsMushroom.jpg">
+                   <div class="column">
+                   <p>Grilled Mushroom</p>
+                   <button class="btn btn-success" id="Grilled_Mushroom" onclick="add_item_GM()">Add</button>
+                   </div>
+                </div>
+                <div class="row">
+                    <img class="menu_img" src="toppingsOnion.webp">
+                    <p>Onion</p>
+                    <button class="btn btn-success" id="Onion" onclick="add_item_O()">Add</button>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="toppingsCapsicum.webp">
+                    <p>Crisp Capsicum</p>
+                    <button class="btn btn-success" id="Crisp_Capsicum" onclick="add_item_CC()">Add</button>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="toppingsTomato.webp">
+                    <p>Fresh Tomato</p>
+                    <button class="btn btn-success" id="Fresh_Tomato" onclick="add_item_FT()">Add</button>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="toppingsPaneer.webp">
+                    <p>Paneer</p>
+                    <button class="btn btn-success" id="Paneer" onclick="add_item_P()">Add</button>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="toppingsPaparika.webp">
+                    <p>Red Pepper</p>
+                    <button class="btn btn-success" id="Red_Pepper" onclick="add_item_RP()">Add</button>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="toppingsJalapeno.webp">
+                    <p>Jalepeno</p>
+                    <button class="btn btn-success" id="Jalepeno" onclick="add_item_J()">Add</button>
+                 </div>
+                 <div class="row">
+                    <img class="menu_img" src="toppingsGoldenCorn.webp">
+                    <p>Golden Corn</p>
+                    <button class="btn btn-success" id="Golden_Corn" onclick="add_item_GC()">Add</button>
+                 </div>
+                 <div class="row">
+                  <img class="menu_img" src="toppingsOlives.webp">
+                  <p>Black Olive</p>
+                  <button class="btn btn-success" id="Black_Olive" onclick="add_item_BO()">Add</button>
+                  </div>
+                 <div class="row">
+                     <img class="menu_img" src="toppingsBarbeque.webp">
+                     <p>Pepper Barbeque Chicken</p>
+                     <button class="btn btn-success" id="Pepper_Barbeque_Chicken" onclick="add_item_PBC()">Add</button>
+                  </div>
+                  <div class="row">
+                     <img class="menu_img" src="toppingsPeriPeriChicken.webp">
+                     <p>Peri-Peri Chicken</p>
+                     <button class="btn btn-success" id="Peri-Peri_Chicken" onclick="add_item_PPC()">Add</button>
+                  </div>
+                  <div class="row">
+                     <img class="menu_img" src="toppingsGrilledChickenRasher.webp">
+                     <p>Grilled Chicken Rasher</p>
+                     <button class="btn btn-success" id="Grilled_Chicken_Rasher" onclick="add_item_GCR()">Add</button>
+                  </div>
+                  <div class="row">
+                     <img class="menu_img" src="toppingsChickenTikka.webp">
+                     <p>Chicken Tikka</p>
+                     <button class="btn btn-success" id="Chicken_Tikka" onclick="add_item_CT()">Add</button>
+                  </div>
+                  <div class="row">
+                     <img class="menu_img" src="toppingPepperoni.webp">
+                     <p>Chicken Pepperoni</p>
+                     <button class="btn btn-success" id="Chicken_Pepperoni" onclick="add_item_CP()">Add</button>
+                  </div>
+                  <div class="row">
+                     <img class="menu_img" src="topping_chicken_keema.webp">
+                     <p>Chicken Keema</p>
+                     <button class="btn btn-success" id="Chicken_Keema" onclick="add_item_CK()">Add</button>
+                  </div>
+               </div>
+            </div>
+            
+        </div>
+		
+        <div class="block2">
+         <button class="btn btn-success" id="see_cart" onclick="see_cart()">See Cart</button> 
+            <div id="display_addedmenu">
+               
+            </div>
+        </div>
+        
+    </div>
+
+    <div>
+        <img class="img-responsive" src="images/topping.png">
+    </div>
+
+
+</body></html>
